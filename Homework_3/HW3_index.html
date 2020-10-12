@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="HW3_style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Secure Password Generator</h1>
+      </header>
+      <div class="card">
+        <div class="card-header">
+          <h2>Generate a Safe and Secure Password</h2>
+        </div>
+        <div class="card-body">
+          <textarea
+            readonly
+            id="password"
+            placeholder="Your Secure Password"
+            aria-label="Generated Password"
+          ></textarea>
+        </div>
+        <div class="card-footer">
+          
+          <button id="generate" class="btn" onclick="myFunction()">Generate Password</button>
+          
+          <script>
+            function myFunction() {
+             var wantPassword = prompt("What would you like the main word of your password to be? (Password must be at least 8 characters and no more than 128 characters).");
+            }
+            var wantPassword = prompt("Your password must include at least 1 special character, (ex. @,#,$,%). What would you like that character to be? ")
+         
+          </script>
+        
+      </div>
+      </div>
+    </div>
+    <script src="HW3_script.js"></script>
+  </body>
+</html>
